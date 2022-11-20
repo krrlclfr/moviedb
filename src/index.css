@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,79 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  li{
+    @apply px-3 py-3;
+  }
+  button{
+    @apply py-2 my-1 px-2;
+  }
+  p{
+    @apply py-1 px-1
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiper-pagination-bullet{
+    background-color: red;
+  }
+  .swiper-pagination{
+    background-color: rgb(194, 102, 48);
+  }
+
+  .scrolls, ::-webkit-scrollbar {
+    width: 1px;
+    
+  }
+  .scrolls, ::-webkit-scrollbar-track {
+    background: #b5b5b5; 
+  }
+  /* Handle */
+  .scrolls, ::-webkit-scrollbar-thumb {
+    background: #6B9688; 
+    
+  }
+
+  /* Handle on hover */
+  .scrolls, ::-webkit-scrollbar-thumb:hover {
+    background: #6B9688;
+    
+  }
+
+  
 }
